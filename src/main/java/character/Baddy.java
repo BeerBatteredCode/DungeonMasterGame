@@ -2,10 +2,11 @@ package character;
 
 import enums.CharType;
 import enums.WeaponType;
+import interfaces.IVillain;
 
 import java.util.ArrayList;
 
-public class Baddy extends Character {
+public class Baddy extends Character implements IVillain {
 
     private ArrayList<WeaponType> allWeapons;
     private WeaponType weaponType;

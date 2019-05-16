@@ -2,10 +2,11 @@ package character;
 
 import enums.CharType;
 import enums.WeaponType;
+import interfaces.IHero;
 
 import java.util.ArrayList;
 
-public class Fighter extends Character {
+public class Fighter extends Character implements IHero {
 
     private ArrayList<WeaponType> allWeapons;
     private WeaponType weaponType;
@@ -23,4 +24,9 @@ public class Fighter extends Character {
     public WeaponType getEquippedWeapon() {
         return allWeapons.get(0);
     }
+
+    public int getEquippedWeaponDamage(){
+        return getEquippedWeapon().getWeaponDamage();
+    }
+
 }

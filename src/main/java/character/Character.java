@@ -2,10 +2,11 @@ package character;
 
 import enums.CharType;
 import enums.WeaponType;
+import interfaces.IHero;
 
 public abstract class Character {
 
-    private int hp, speed;
+    private int hp, speed, armour;
     private String name;
     private CharType charType;
     private WeaponType weaponType;
@@ -14,6 +15,7 @@ public abstract class Character {
         this.name = name;
         this.hp = charType.getHp();
         this.speed = charType.getSpeed();
+        this.armour = charType.getArmour();
     }
 
     public String getName() {
@@ -34,5 +36,21 @@ public abstract class Character {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    public int getArmour() {
+        return armour;
+    }
+
+    public void setArmour(int armour) {
+        this.armour = armour;
+    }
+
+    public void takeDamage(int amount){
+        hp -= amount;
+    }
+
+    public boolean isAlive(){
+        return hp > 0;
     }
 }

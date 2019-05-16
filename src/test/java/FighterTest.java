@@ -48,4 +48,16 @@ public class FighterTest {
     public void canGetWeapon(){
         assertEquals(weaponType.GREAT_SWORD, fighter.getEquippedWeapon());
     }
+
+    @Test
+    public void canGetArmour(){
+        assertEquals(150, fighter.getArmour());
+    }
+
+    @Test
+    public void canGetWeaponDamaged(){
+        assertEquals(150, fighter.getEquippedWeaponDamage());
+    }
+
+
 }
