@@ -2,6 +2,8 @@ package enums;
 
 public enum CharType {
     KNIGHT(150, 70, 150),
+    PALADIN(200, 50, 185),
+    ROGUE(90, 220, 100),
     TROLL(200, 10, 50);
 
 
