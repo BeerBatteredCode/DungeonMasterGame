@@ -24,7 +24,7 @@ public class BaddyTest {
 
     @Test
     public void canGetHP(){
-        assertEquals(150, baddy.getHp());
+        assertEquals(200, baddy.getHp());
     }
 
     @Test
@@ -35,7 +35,7 @@ public class BaddyTest {
 
     @Test
     public void canGetSpeed(){
-        assertEquals(70, baddy.getSpeed());
+        assertEquals(10, baddy.getSpeed());
     }
 
     @Test
@@ -46,6 +46,16 @@ public class BaddyTest {
 
     @Test
     public void canGetWeapon(){
-        assertEquals(weaponType.GREAT_SWORD, baddy.getEquippedWeapon());
+        assertEquals(weaponType.ROCK_ON_STICK, baddy.getEquippedWeapon());
+    }
+
+    @Test
+    public void canGetArmour(){
+        assertEquals(50, baddy.getArmour());
+    }
+
+    @Test
+    public void canGetWeaponDamaged(){
+        assertEquals(200, baddy.getEquippedWeaponDamage());
     }
 }

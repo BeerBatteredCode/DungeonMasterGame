@@ -24,4 +24,8 @@ public class Baddy extends Character implements IVillain {
     public WeaponType getEquippedWeapon() {
         return allWeapons.get(0);
     }
+
+    public int getEquippedWeaponDamage(){
+        return getEquippedWeapon().getWeaponDamage();
+    }
 }
