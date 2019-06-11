@@ -2,7 +2,6 @@ package character;
 
 import enums.CharType;
 import enums.WeaponType;
-import interfaces.IHero;
 
 public abstract class Character {
 

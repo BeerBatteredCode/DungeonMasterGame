@@ -28,5 +28,4 @@ public class Fighter extends Character implements IHero {
     public int getEquippedWeaponDamage(){
         return getEquippedWeapon().getWeaponDamage();
     }
-
 }
